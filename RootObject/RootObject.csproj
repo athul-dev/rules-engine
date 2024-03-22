@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB343FB3-3F23-419A-9782-B1408022FD5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RootObject</RootNamespace>
+    <AssemblyName>RootObject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Pms\System\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CoreHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Pms\System\CoreHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ExamRecordInternalInterfaces, Version=5.1.0.108, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Pms\System\ExamRecordInternalInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Imaging3D, Version=4.5.0.30020, Culture=neutral, PublicKeyToken=4d08f6b60c627beb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Pms\System\Imaging3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Parameters, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Pms\System\Parameters.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AxialResult.cs" />
+    <Compile Include="AxialStep.cs" />
+    <Compile Include="CTStep.cs" />
+    <Compile Include="HelicalResult.cs" />
+    <Compile Include="HelicalStep.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultGeneral.cs" />
+    <Compile Include="RootObjectBuilderUtil.cs" />
+    <Compile Include="RotatingResult.cs" />
+    <Compile Include="RotatingStep.cs" />
+    <Compile Include="RulesBuilderUtil.cs" />
+    <Compile Include="SurivewStep.cs" />
+    <Compile Include="SurviewResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERGenerator\ERGenerator.csproj">
+      <Project>{640374AA-26D5-41D8-B611-E83BC86D3AA7}</Project>
+      <Name>ERGenerator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

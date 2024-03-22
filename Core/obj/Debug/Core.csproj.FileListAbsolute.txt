@@ -1,0 +1,5 @@
+D:\Repos\CT_AD_Repo\ct_advanced_dev\Rules System\RuleEnginePOC\Core\obj\Debug\Core.csprojAssemblyReference.cache
+D:\Repos\CT_AD_Repo\ct_advanced_dev\Rules System\RuleEnginePOC\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Repos\CT_AD_Repo\ct_advanced_dev\Rules System\RuleEnginePOC\Core\obj\Debug\Core.csproj.CopyComplete
+D:\Repos\CT_AD_Repo\ct_advanced_dev\Rules System\RuleEnginePOC\Core\obj\Debug\Core.dll
+D:\Repos\CT_AD_Repo\ct_advanced_dev\Rules System\RuleEnginePOC\Core\obj\Debug\Core.pdb
